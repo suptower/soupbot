@@ -21,7 +21,8 @@ client.once('ready', () => {
 });
 
 client.on('message',async message => {
-    if (message.channel.type != "text") {
+    if (message.channel.type != "text" && message != om) {
+        let om = message;
         message.channel.send("Sorry, my commands are only made to be used in/on server text channels.");
         return message.channel.delete();
     }
