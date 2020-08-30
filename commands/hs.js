@@ -5,7 +5,7 @@ module.exports = {
 	description: 'Use the hs feature.',
 	execute(message, args) {
         console.log("hs command has been initiated.");
-        if (!message.member.permissions.has('MOVE_MEMBER')) {
+        if (!message.member.permissions.has('MOVE_MEMBERS')) {
             return message.reply("you are not allowed to use this command.\nYou need to be allowed to move members to execute this.");
         }
 		if (!args.length && message.member.voice.channel) {
