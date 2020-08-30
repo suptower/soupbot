@@ -18,6 +18,6 @@ module.exports = {
             .setTimestamp()
             .setFooter('Updated: 30th of August, 2020');
 
-            message.channel.send(InfoEmbed);
+            message.author.send("Test");
 	},
 };
