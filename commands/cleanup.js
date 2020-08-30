@@ -28,7 +28,6 @@ module.exports = {
             else {
                 message.channel.bulkDelete(x);
                 message.channel.send(`${x} messages have been deleted.`);
-                message.channel.send("100 messages have been deleted.");
                 setTimeout(function() {
                     message.channel.bulkDelete(1);
                 }, 10000);
