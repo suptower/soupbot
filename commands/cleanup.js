@@ -12,7 +12,7 @@ module.exports = {
             message.channel.bulkDelete(100);
             message.channel.send("100 messages have been deleted.");
             setTimeout(function() {
-                bulkDelete(1);
+                message.channel.bulkDelete(1);
             }, 10000);
         }
         else if (!isNaN(parseInt(args[0]))) {
@@ -22,7 +22,7 @@ module.exports = {
                 message.reply("I am only allowed to delete 100 messages at a time");
                 message.channel.send("100 messages have been deleted.");
                 setTimeout(function() {
-                    bulkDelete(2);
+                    message.channel.bulkDelete(2);
                 }, 10000);
             }
             else {
@@ -30,7 +30,7 @@ module.exports = {
                 message.channel.send(`${x} messages have been deleted.`);
                 message.channel.send("100 messages have been deleted.");
                 setTimeout(function() {
-                    bulkDelete(1);
+                    message.channel.bulkDelete(1);
                 }, 10000);
             }
         }
