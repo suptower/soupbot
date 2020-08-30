@@ -22,7 +22,8 @@ client.once('ready', () => {
 
 client.on('message',async message => {
     if (message.channel.type != "text") {
-        return message.channel.send("Sorry, my commands are only made to be used in/on server text channels.");
+        message.channel.send("Sorry, my commands are only made to be used in/on server text channels.");
+        return message.channel.delete();
     }
     if (message.content === "SOUPBOT.KILLSWITCH") {
         message.channel.send("This bot is resetting...");
