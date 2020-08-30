@@ -5,7 +5,6 @@ client.commands = new Discord.Collection();
 const commandFiles = fs.readdirSync('./commands').filter(file => file.endsWith('.js'));
 const ytdl = require('ytdl-core');
 let defaultCooldown = 3;
-let om;
 
 const cooldowns = new Discord.Collection();
 
@@ -22,10 +21,8 @@ client.once('ready', () => {
 });
 
 client.on('message',async message => {
-    if (message.channel.type != "text" && message.content != om.content) {
-        om = message;
-        message.channel.send("Sorry, my commands are only made to be used in/on server text channels.");
-        return message.channel.delete();
+    if (message.channel.type != "text" && message.author.id != "304354151578599428") {
+        return message.channel.send("Sorry, my commands are only made to be used in/on server text channels.");
     }
     if (message.content === "SOUPBOT.KILLSWITCH") {
         message.channel.send("This bot is resetting...");
