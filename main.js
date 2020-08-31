@@ -19,7 +19,7 @@ let prefix = "sb";
 client.once('ready', () => {
     console.log('Bot has been initialized.');
     client.user.setPresence({ activity: { type: 'LISTENING', name: `${prefix} info` }, status: 'online'});
-    speechClient.initialize();
+    ttsClient.initialize();
     console.log('Bot presence has been set.')
 });
 
