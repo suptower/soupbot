@@ -1,8 +1,6 @@
 const Discord = require('discord.js');
 const client = new Discord.Client();
 const fs = require('fs');
-const text2wav = require('text2wav');
-var streamBuffers = require('stream-buffers');
 const {OpusEncoder} = require('@discordjs/opus');
  
 client.commands = new Discord.Collection();
