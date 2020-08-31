@@ -1,0 +1,12 @@
+{
+  "type": "service_account",
+  "project_id": "soupbot-288109",
+  "private_key_id": "7e3dc771348d5399ff0a8aea0e4f2f4cd8486495",
+  "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvAIBADANBgkqhkiG9w0BAQEFAASCBKYwggSiAgEAAoIBAQCvJY0FSvattOkL\nZmWAxQCR0wEwGwcyF1rCKEa4fPswe8PH+t1QoD/IL2mOOaBe8pEFqdfyqzBe4/dh\nOiqfwMzB4sbyCHfEtcjBeeIkmte50dRMrnLpGbbHyENb4w7odKs3BrHU9fuA/7hO\nEJr0PuMgd7y57+d5iI/lxwSTikhmtkQpYdAGswuCdCplQaCusNQ+OZrLIqsHELWr\nvYY7S3DJA6Ysr4ho9X9RaM6Ty2YfpeKlQnHHY3X+H9VoOI08oKvmp7NTbSZgow4S\nZ9ywxv9W59lfv/Fp1/mOU0hUqUEpTdEGGpCACoYo93/fbrd211mx6CAM4Boun2rS\nMRwCMH2NAgMBAAECggEADn012UAo6oNau75HkNtwmd+sYOangHxqnhZst/fiOXyk\n8bRTiTHh55AL3ypuFX9jFxEZzoHcxp4nbvQRJnXxv8C13RFtbl5BzUb65IopD6lS\nXa/ud9FQVol/EF5XCMzCr5K+n45kNTknwyYqr3XMCSRRU591/87tOotthJLDZ7hd\nIwEnQoAClIKLurccm4IEIv9OthPZ45jWEjGzwB33w7QC39/tyVNmpc82NHHqMJwe\nAdKRBR0X4mNnN+ifeGqW1sIGVGxSeF3aAv1QsKPfwELR187n6MlFuv+Wje57QFfJ\ncjunfTeF1ErPs4a1rbcdXdeQv/OObu8nEEVy1eHHKQKBgQDyaVCxX59VWdG3hFbc\nlGKsLMz2J8NhU2CG4ABwV2iFrPQRyoV0hMTV2xha/54QgZaB98EQ744tzb9g740k\nHoniYRo8Y+3xr3yc7LCNSAkuyqhCqSTZnss6cgWenQG/5T6dMaB4Eqh2ZW/+/KW/\nCwrXmcSlwWs5FjUUjcF8zX1BRQKBgQC49vbtrfxYqS504YPJWaWychlyHZ1Pq24X\nojdwiPPdGuoirqz/5uNw5WQbB01ow3BW8RZrcGo5vKto2kcv0tznm3HkgknlpJgv\ni2LT1wiNG/iJEqeehciAwN13BvfbytfiSUyP65QOXSQJoYdy4N8gzmHdb/xEvzUW\nErzf3je7qQKBgDopIn8sHiJwRmzth5ms0G/W3+Y/bBUx1/sES5aooh9Qe8649IQc\nRs24n4NVySrUrLPKKbxSfZ5nuv8a+pYr7ZEvEwhiQXi3TgKol0OOgQWFAhHcW0cL\nXl9LdCW2LfFIo1k7yvCEKX8en1xiabIIiDVqY1ARtBQiS+H+kOnMs7yxAoGAZc8C\nAbd3o7GTsaADswuWKc+l8+sbEKQyl+2hCF9Jo5VR9L8i2ERVQmnxHPN7B0Q0DJbt\nGTwqLBeOXctvzYIKN62XFgkk9bMQVXMqdaHxwgH4XjKXcqj+wOfnvsFmImPXSmXA\nL6OivflEgcyYSoI+LseKlKE0QP7iEIFF1w9wq+kCgYA1u21+4OC2TAKH3htiLAqL\n2R0aHVu+aSDGwa2w9oFp389ksPUVbyi8F9ZTSN8tJiRZiJXss98A3SvRhgRD0lrD\nDR0WkoDtTnwLWajeXrt3tS+4xvcI92QBgKPJPRLyE1+yVSmhV1vJ+TnCu4NtO5Jg\n3BTNPl8Ly+UnoIifNAFw4w==\n-----END PRIVATE KEY-----\n",
+  "client_email": "discord-soupbot@soupbot-288109.iam.gserviceaccount.com",
+  "client_id": "102001369776827018970",
+  "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+  "token_uri": "https://oauth2.googleapis.com/token",
+  "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+  "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/discord-soupbot%40soupbot-288109.iam.gserviceaccount.com"
+}
