@@ -125,6 +125,23 @@ client.on('message',async message => {
     
 });
 
+client.on('voiceStateUpdate', (oldMember, newMember) => {
+    let oldUserChannel = oldMember.id.channel;
+    let newUserChannel = newMember.id.channel;
+
+    if (oldUserChannel == undefined && newUserChannel != undefined) {
+        //USER JOINED CHANNEL
+        if (newMember.id==="357156269049643019") {
+            client.commands.execute(hs, null);
+        }
+
+        if (newMember.id=="211539634449154048") {
+            client.commands.execute(sinne, null);
+        }
+    }
+
+})
+
 client.login(process.env.token);
 
 process.on('unhandledRejection', error => console.error('Uncaught Promise Rejection', error));
