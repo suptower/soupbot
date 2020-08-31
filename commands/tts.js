@@ -9,7 +9,7 @@ module.exports = {
             const str2 = args.join(' ');
             const link = str1.concat(str2);
             voiceChannel.join().then(connection => {
-                const dispatcher = connection.play();
+                const dispatcher = connection.play(link);
                 dispatcher.on('finish',() => voiceChannel.leave(link));
             })
         }
