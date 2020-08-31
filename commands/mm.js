@@ -3,26 +3,27 @@ module.exports = {
 	name: 'mm',
 	description: 'moooin meisteeer',
 	execute(message, args) {
+        let stream = "";
         console.log("mm command has been initiated.");
         const value = Math.round(Math.random()*4);
         switch (value) {
             case 0:
-                const stream = 'https://media1.vocaroo.com/mp3/1d2uJN1BHCMS';
+                stream = 'https://media1.vocaroo.com/mp3/1d2uJN1BHCMS';
                 break;
             case 1:
-                const stream = 'https://media1.vocaroo.com/mp3/1kKocCqcEZdV';
+                stream = 'https://media1.vocaroo.com/mp3/1kKocCqcEZdV';
                 break;
             case 2:
-                const stream = 'https://media1.vocaroo.com/mp3/1nv4IckXsCTl';
+                stream = 'https://media1.vocaroo.com/mp3/1nv4IckXsCTl';
                 break;
             case 3:
-                const stream = 'https://media1.vocaroo.com/mp3/1lwc7EQZYH4H';
+                stream = 'https://media1.vocaroo.com/mp3/1lwc7EQZYH4H';
                 break;
             case 4:
-                const stream = 'https://media1.vocaroo.com/mp3/1axh0IStlpQ6';
+                stream = 'https://media1.vocaroo.com/mp3/1axh0IStlpQ6';
                 break;
             default:
-                const stream = 'https://media1.vocaroo.com/mp3/1axh0IStlpQ6';
+                stream = 'https://media1.vocaroo.com/mp3/1axh0IStlpQ6';
                 break;
         }
 
