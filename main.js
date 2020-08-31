@@ -133,16 +133,10 @@ client.on('voiceStateUpdate', (oldState, newState) => {
         //USER JOINED CHANNEL
         if (newState.id==="357156269049643019") {
             newUserChannel.join().then(connection => {
+                console.log("Benny got rekt eZ in voice channel.");
                 const stream = 'https://media.vocaroo.com/mp3/jWCRHXWEsTT';
                 const dispatcher = connection.play(stream);
                 dispatcher.on('finish',() => newUserChannel.leave());
-            })
-        }
-        if (newState.id==="211539634449154048") {
-            newUserChannel.join().then(connection => {
-                const stream = 'https://media1.vocaroo.com/mp3/18Pzg0TyUdXX';
-                const dispatcher = connection.play(stream);
-                dispatcher.on('finish', () => newUserChannel.leave());
             })
         }
     }
