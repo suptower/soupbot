@@ -4,7 +4,7 @@ module.exports = {
 	execute(message, args) {
         console.log("tts command has been initiated.");
         var message = args.slice();
-        message.shift;
+        message.shift();
         if (!args.length && message.member.voice.channel) {
             const voiceChannel = message.member.voice.channel;
             const str1='http://api.voicerss.org/?key=de876d46f8d44255aa7b445628cc32a0&hl=de-de&v=Jonas&c=MP3&f=16khz_16bit_stereo&src=';
