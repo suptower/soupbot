@@ -1,5 +1,4 @@
 //NOTES
-//Exclude collection
 //Save prefix at restart?
 const Discord = require('discord.js');
 const client = new Discord.Client();
@@ -43,8 +42,10 @@ client.on('message',async message => {
         console.log("Benny tried to use bot. Got rekt eZ.")
         return message.reply("you are not allowed to use this bot.\nReason: Lack of EHRE.");
     }
+    
+    const excludeExists = message.member.roles.cache.find(roleEx => Discord.Role.name === 'EXSOUP')
 
-    if (message.member.roles.cache.find(role => Discord.Role.name === 'EXSOUP')) {
+    if (excludeExists) {
         return message.reply("you have been excluded from the ability to use this bot.\nRest in piss.");
     }
 
