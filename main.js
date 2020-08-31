@@ -42,11 +42,13 @@ client.on('message',async message => {
         console.log("Benny tried to use bot. Got rekt eZ.")
         return message.reply("you are not allowed to use this bot.\nReason: Lack of EHRE.");
     }
-    
-    const excludeRole = message.member.roles.cache.find(role => role.name === "EXSOUP");
 
-    if (message.member.roles.cache.has(excludeRole.id)) {
-        return message.reply("you have been excluded from the ability to use this bot.\nRest in piss.");
+    const excludeRole = message.guild.roles.cache.find(role => role.name === "EXSOUP");
+
+    if (excludeRole) {
+        if (message.member.roles.cache.has(excludeRole.id)) {
+            return message.reply("you have been excluded from the ability to use this bot.\nRest in piss.");
+        }
     }
 
     const args = message.content.slice(prefix.length).trim().split(/ +/);
