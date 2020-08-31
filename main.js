@@ -125,20 +125,20 @@ client.on('message',async message => {
     
 });
 
-client.on('voiceStateUpdate', (oldMember, newMember) => {
-    let oldUserChannel = oldMember.id.channel;
-    let newUserChannel = newMember.id.channel;
+client.on('voiceStateUpdate', (oldState, newState) => {
+    let oldUserChannel = oldState.channel;
+    let newUserChannel = newState.channel;
 
     if (oldUserChannel == undefined && newUserChannel != undefined) {
         //USER JOINED CHANNEL
-        if (newMember.id==="357156269049643019") {
+        if (newState.id==="357156269049643019") {
             newUserChannel.join().then(connection => {
                 const stream = 'https://media.vocaroo.com/mp3/jWCRHXWEsTT';
                 const dispatcher = connection.play(stream);
                 dispatcher.on('finish',() => newUserChannel.leave());
             })
         }
-        if (newMember.id==="211539634449154048") {
+        if (newState.id==="211539634449154048") {
             newUserChannel.join().then(connection => {
                 const stream = 'https://media1.vocaroo.com/mp3/18Pzg0TyUdXX';
                 const dispatcher = connection.play(stream);
