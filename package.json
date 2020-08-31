@@ -9,11 +9,11 @@
   "author": "suptower",
   "license": "ISC",
   "dependencies": {
-    "@discordjs/opus": "^0.3.2",
     "@google-cloud/speech": "^4.1.1",
     "@google-cloud/text-to-speech": "^3.1.0",
     "discord.js": "^12.3.1",
     "ffmpeg-static": "^4.2.7",
+    "stream-buffers": "^3.0.2",
     "text2wav": "0.0.13",
     "ytdl-core": "^3.2.2"
   }
