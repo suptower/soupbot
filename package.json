@@ -9,6 +9,7 @@
   "author": "suptower",
   "license": "ISC",
   "dependencies": {
+    "@discordjs/opus": "^0.3.2",
     "@google-cloud/speech": "^4.1.1",
     "@google-cloud/text-to-speech": "^3.1.0",
     "discord.js": "^12.3.1",

@@ -1,6 +1,8 @@
 const Discord = require('discord.js');
 const text2wav = require('text2wav');
 var streamBuffers = require('stream-buffers');
+const {OpusEncoder} = require('@discordjs/opus');
+const encoder = new OpusEncoder(48000,2);
 module.exports = {
 	name: 'tts',
 	description: 'uses text-to-speech provided by google-api',

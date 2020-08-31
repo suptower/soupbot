@@ -3,13 +3,7 @@ const client = new Discord.Client();
 const fs = require('fs');
 const text2wav = require('text2wav');
 var streamBuffers = require('stream-buffers');
-var opusscript = require('opusscript');
-var samplingRate = 48000;
-var frameDuration = 20;
-var channels = 2;
- 
-// Optimize encoding for audio. Available applications are VOIP, AUDIO, and RESTRICTED_LOWDELAY
-var encoder = new opusscript(samplingRate, channels, opusscript.Application.AUDIO);
+const {OpusEncoder} = require('@discordjs/opus');
  
 client.commands = new Discord.Collection();
 const commandFiles = fs.readdirSync('./commands').filter(file => file.endsWith('.js'));
