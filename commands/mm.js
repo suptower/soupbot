@@ -1,7 +1,8 @@
 const Discord = require('discord.js');
 module.exports = {
 	name: 'mm',
-	description: 'moooin meisteeer',
+    description: 'moooin meisteeer',
+    cooldown: 10,
 	execute(message, args) {
         let stream = "";
         console.log("mm command has been initiated.");

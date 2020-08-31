@@ -1,9 +1,8 @@
-//NOTES
-//Save prefix at restart?
 const Discord = require('discord.js');
 const client = new Discord.Client();
 const fs = require('fs');
 const {OpusEncoder} = require('@discordjs/opus');
+const db = require('quick.db');
  
 client.commands = new Discord.Collection();
 const commandFiles = fs.readdirSync('./commands').filter(file => file.endsWith('.js'));
@@ -16,7 +15,7 @@ for (const file of commandFiles) {
 	const command = require(`./commands/${file}`);
 	client.commands.set(command.name, command);
 }
-let prefix = "sb";
+const prefix = "sb";
 
 client.once('ready', () => {
     console.log('Bot has been initialized.');
@@ -54,20 +53,8 @@ client.on('message',async message => {
     const args = message.content.slice(prefix.length).trim().split(/ +/);
     const commandName = args.shift().toLowerCase();
 
-    if (commandName === "prefix") {
-        if (!message.member.permissions.has('MANAGE_CHANNELS')) {
-            return message.reply("you are not allowed to change the prefix.\nYou need to be allowed to manage channels to execute this.");
-        }
-        if (!args.length) {
-            return message.reply('you need to provide a new prefix.');
-        }
-        else {
-            prefix = args[0];
-            message.reply(`The prefix has been changed to ${prefix}.`)
-            client.user.setPresence({ activity: { type: 'LISTENING', name: `${prefix} info` }, status: 'online'});
-            console.log(`Prefix has been changed to ${prefix}`);
-        }
-    }
+
+    //
 
     if (commandName === "yt") {
         const voiceChannel = message.member.voice.channel;
@@ -124,11 +111,6 @@ client.on('message',async message => {
         }
         timestamps.set(message.author.id, now);
         setTimeout(() => timestamps.delete(message.author.id), cooldownAmount);
-    }
-
-    if (message.member.id == '138432810187882496' && message.attachments.size>=1) {
-        const s = "whoasked";
-        s.execute(message,args);
     }
 
     try {
