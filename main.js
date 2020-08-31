@@ -132,15 +132,25 @@ client.on('voiceStateUpdate', (oldMember, newMember) => {
     if (oldUserChannel == undefined && newUserChannel != undefined) {
         //USER JOINED CHANNEL
         if (newMember.id==="357156269049643019") {
-            client.commands.execute(hs, null);
+            newUserChannel.join().then(connection => {
+                const stream = 'https://media.vocaroo.com/mp3/jWCRHXWEsTT';
+                const dispatcher = connection.play(stream);
+                dispatcher.on('finish',() => newUserChannel.leave());
+            })
         }
-
-        if (newMember.id=="211539634449154048") {
-            client.commands.execute(sinne, null);
+        if (newMember.id==="211539634449154048") {
+            newUserChannel.join().then(connection => {
+                const stream = 'https://media1.vocaroo.com/mp3/18Pzg0TyUdXX';
+                const dispatcher = connection.play(stream);
+                dispatcher.on('finish', () => newUserChannel.leave());
+            })
         }
     }
 
 })
+            
+            
+
 
 client.login(process.env.token);
 
