@@ -1,3 +1,6 @@
+//NOTES
+//Exclude collection
+//Save prefix at restart?
 const Discord = require('discord.js');
 const client = new Discord.Client();
 const fs = require('fs');
@@ -41,6 +44,10 @@ client.on('message',async message => {
         return message.reply("you are not allowed to use this bot.\nReason: Lack of EHRE.");
     }
 
+    if (message.member.roles.cache.find(role => Discord.Role.name === 'EXSOUP')) {
+        return message.reply("you have been excluded from the ability to use this bot.\nRest in piss.");
+    }
+
     const args = message.content.slice(prefix.length).trim().split(/ +/);
     const commandName = args.shift().toLowerCase();
 
@@ -64,7 +71,7 @@ client.on('message',async message => {
 		if (!voiceChannel) {
             return message.reply('you need to be connected to a voice channel.');
         }
-            message.channel.send("Trying to play audio.\nCAUTION: This command is extremely unfinished.\nIf I fail to play the song, you should try to disconnect me from the voice channel manually.");
+            message.channel.send("Trying to play audio.\nCAUTION: This command is extremely unpolished.\nIf I fail to play the song, you should try to disconnect me from the voice channel manually.");
             voiceChannel.join().then(connection => {
             const stream = ytdl(args[0], {filter: 'audioonly'});
             const dispatcher = connection.play(stream);
@@ -114,6 +121,11 @@ client.on('message',async message => {
         }
         timestamps.set(message.author.id, now);
         setTimeout(() => timestamps.delete(message.author.id), cooldownAmount);
+    }
+
+    if (message.member.id == '138432810187882496' && message.attachments.size>=1) {
+        const s = "whoasked";
+        s.execute(message,args);
     }
 
     try {
