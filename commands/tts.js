@@ -24,7 +24,7 @@ module.exports = {
                 return message.reply("this server has not configured 'AUROLE'.\nPlease create this role to configure permissions for alternative usage of commands.");
             }
             else {
-                if (!message.member.roles.cache.has(auRole.id)) {
+                if (!message.member.roles.cache.has(auRole.id) || !message.member.permissions.has('ADMINISTRATOR')) {
                     return message.reply("you are not allowed to use this command.\nYou need to have 'AUROLE' assigned to execute.");
                 }
                 else {

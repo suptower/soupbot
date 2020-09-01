@@ -4,10 +4,6 @@ module.exports = {
 	description: 'literally who asked',
 	execute(message, args) {
         console.log("who asked command has been initiated.");
-        if (message.author.id === "138432810187882496" && message.attachments.size==0) {
-            console.log("Michey wollte who asken LUL");
-            return message.reply("bro dein ernst wie kannst du den jetzt bringen.");
-        }
         var pics = ['https://pbs.twimg.com/media/EcVPsQgUYAASoqL.jpg','https://preview.redd.it/gzcz4otekrh41.jpg?auto=webp&s=f47f3633ba6118d6231ab59901efc111bd8719a8',
             'https://media.tenor.com/images/74e12b00a89e02e8fe1c688926b7734f/tenor.gif','https://media.makeameme.org/created/cool-and-all.png',
             'https://media.tenor.com/images/55521bfc7866f6a5d78e9f0d854e17b5/tenor.gif', 'https://i.redd.it/jq76nxhc3ek41.jpg', 'https://pbs.twimg.com/media/EONXbAWU4AAmpFQ.jpg',

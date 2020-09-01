@@ -21,7 +21,7 @@ module.exports = {
             )
             .addField('\u200B','\u200B')
             .setTimestamp()
-            .setFooter('Updated: 31st of August, 2020');
+            .setFooter('Updated: 1st of September, 2020');
 
             message.author.send(InfoEmbed);
 	},
