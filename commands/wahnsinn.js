@@ -29,7 +29,7 @@ module.exports = {
                     toJoin.join().then(connection => {
                         const stream = "https://media1.vocaroo.com/mp3/1oDASLffCTlZ";
                         const dispatcher = connection.play(stream);
-                        dispatcher.on('finish', () => voiceChannel.leave());
+                        dispatcher.on('finish', () => toJoin.leave());
                     })
                 }
                 
