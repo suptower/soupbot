@@ -25,7 +25,7 @@ module.exports = {
             }
             else {
                 if (!message.member.roles.cache.has(auRole.id) && !message.member.permissions.has('ADMINISTRATOR')) {
-                    return message.reply("you are not allowed to use this command.\nYou need to have 'AUROLE' assigned to execute.");
+                    return message.reply("you are not allowed to use this command.\nYou need to have 'AUSOUP' role assigned to execute.");
                 }
                 else {
                     var toRead = args.slice();
