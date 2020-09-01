@@ -50,13 +50,13 @@ module.exports = {
 
         //FIGHT FUNCTIONS
 
-        function sleep(milliseconds) {
-            const date = Date.now();
-            let currentDate = null;
-            do {
-              currentDate = Date.now();
-            } while (currentDate - date < milliseconds);
-          } 
+        // function sleep(milliseconds) {
+        //     const date = Date.now();
+        //     let currentDate = null;
+        //     do {
+        //       currentDate = Date.now();
+        //     } while (currentDate - date < milliseconds);
+        //   } 
 
         function selectAttack(a) {
             var attackName = ["Quick Attack","Thunder Shock","Surfer","Crunch","Double Kick","Razor Wind","Water Gun","Pay Day","Body Slam","Bite"];
@@ -82,49 +82,49 @@ module.exports = {
             var acc = hit(rel);
             var dmg = getDmg(rel);
             // AUTHOR ATTACKS
-            await sleep(500);
+            //await sleep(500);
             message.channel.send(name1+" attacks with "+at+".");
             if (!acc) {
-                await sleep(300);
+                //await sleep(300);
                 message.channel.send(name1+" missed his attack!");
             }
             else {
                 hp2 = hp2 - dmg;
-                await sleep(500);
+                //await sleep(500);
                 message.channel.send(name1+"'s attack scored a damage of"+dmg);
             }
             if (hp2>0) {
-                await sleep(300);
+                //await sleep(300);
                 message.channel.send(name2+" has "+hp2+" HP remaining.");
                 //TAGGED ATTACKS
                 rel = newR();
                 var at = selectAttack(rel);
                 var acc = hit(rel);
                 var dmg = getDmg(rel);
-                await sleep(1000);
+                //await sleep(1000);
                 message.channel.send(name2+" attacks with"+at+".");
                 if (!acc) {
-                    await sleep(300);
+                    //await sleep(300);
                     message.channel.send(name2+" missed his attack!");
                 }
                 else {
                     hp1 = hp1 - dmg;
-                    await sleep(500);
+                    //await sleep(500);
                     message.channel.send(name2+"'s attack scored a damage of"+dmg);
                     if (hp1>0) {
-                        await sleep(300);
+                        //await sleep(300);
                         message.channel.send(name1+" has "+hp1+" HP remaining.");
                     }
                     else {
                         fight = false;
-                        await sleep(1000);
+                        //await sleep(1000);
                         message.channel.send(name1+" fainted.\n"+name2+" won the fight with "+hp2+" HP remaining!");
                     }
                 }
             }
             else {
                 fight = false;
-                await sleep(1000);
+                //await sleep(1000);
                 message.channel.send(name2+" fainted.\n"+name1+" won the fight with "+hp1+" HP remaining!");
             }
         }
