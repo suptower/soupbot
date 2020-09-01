@@ -5,6 +5,7 @@ module.exports = {
     cooldown: 10,
 	execute(message, args) {
         let stream = "";
+        const auRole = message.guild.roles.cache.find(role => role.name === "AUSOUP"); 
         console.log("mm command has been initiated.");
         const value = Math.round(Math.random()*4);
         switch (value) {
@@ -41,15 +42,22 @@ module.exports = {
         return message.reply('you need to be connected to a voice channel to use this command.');
     }
     else if (message.mentions.users.size>=1 && message.mentions.members.first().voice.channel) {
-        if (!message.member.permissions.has('MOVE_MEMBERS')) {
-            return message.reply("you are not allowed to use this command.\nYou need to be allowed to move members to execute this.");
+        if (!auRole) {
+            return message.reply("this server has not configured 'AUROLE'.\nPlease create this role to configure permissions for alternative usage of commands.");
         }
-        const voiceChannel = message.mentions.members.first().voice.channel;
-        voiceChannel.join().then(connection => {
-        const dispatcher = connection.play(stream);
-        dispatcher.on('finish',() => voiceChannel.leave());
-        })
-    
+        else {
+            if (!message.member.roles.cache.has(auRole.id)) {
+                return message.reply("you are not allowed to use this command.\nYou need to have 'AUROLE' assigned to execute.");
+            }
+            else {
+                const voiceChannel = message.mentions.members.first().voice.channel;
+                voiceChannel.join().then(connection => {
+                const dispatcher = connection.play(stream);
+                dispatcher.on('finish',() => voiceChannel.leave());
+                })
+            }
+            
+        }
     }
     else {
         message.reply(`this user is currently not connected to any voice channel.`);
