@@ -50,11 +50,13 @@ module.exports = {
 
         //FIGHT FUNCTIONS
 
-        function sleep(ms) {
-            return new Promise((resolve) => {
-              setTimeout(resolve, ms);
-            });
-          }  
+        function sleep(milliseconds) {
+            const date = Date.now();
+            let currentDate = null;
+            do {
+              currentDate = Date.now();
+            } while (currentDate - date < milliseconds);
+          } 
 
         function selectAttack(a) {
             var attackName = ["Quick Attack","Thunder Shock","Surfer","Crunch","Double Kick","Razor Wind","Water Gun","Pay Day","Body Slam","Bite"];
