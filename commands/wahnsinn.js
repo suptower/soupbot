@@ -1,18 +1,17 @@
 const Discord = require('discord.js');
 module.exports = {
-    name: 'sinne',
-    cooldown: 15,
-	description: 'Makes use of the Sinne function.',
+	name: 'wahnsinn',
+	description: 'WAAAAAAAAAAAAHNSIIINN',
 	execute(message, args) {
-        console.log("sinne command has been initiated.");
+        console.log("wahnsinn command has been initiated.");
         const auRole = message.guild.roles.cache.find(role => role.name === "AUSOUP");
         if (!args.length && message.member.voice.channel) {
             const voiceChannel = message.member.voice.channel;
             voiceChannel.join().then(connection => {
-                const stream = 'https://media1.vocaroo.com/mp3/18Pzg0TyUdXX';
+                const stream = "https://media1.vocaroo.com/mp3/1oDASLffCTlZ";
                 const dispatcher = connection.play(stream);
                 dispatcher.on('finish', () => voiceChannel.leave());
-            })
+            });
         }
         else if (!args.length) {
             return message.reply("you need to be connected to a voice channel.");
@@ -22,13 +21,13 @@ module.exports = {
                 return message.reply("this server has not configured 'AUROLE'.\nPlease create this role to configure permissions for alternative usage of commands.");
             }
             else {
-                if (!message.member.roles.cache.has(auRole.id) && !message.member.permissions.has('ADMINISTRATOR')) {
-                    return message.reply("you are not allowed to use this command.\nYou need to be able to move members to execute this.");
+                if (!message.member.roles.cache.has(auRole.id) && !message.member.permissions.has("ADMINISTRATOR")) {
+                    return message.reply("you are not allowed to use this command.\nYou need to have 'AUROLE' assigned to execute.");
                 }
                 else {
-                    const voiceChannel = message.mentions.members.first().voice.channel;
-                    voiceChannel.join().then(connection => {
-                        const stream = 'https://media1.vocaroo.com/mp3/18Pzg0TyUdXX';
+                    const toJoin = message.mentions.members.first().voice.channel;
+                    toJoin.join().then(connection => {
+                        const stream = "https://media1.vocaroo.com/mp3/1oDASLffCTlZ";
                         const dispatcher = connection.play(stream);
                         dispatcher.on('finish', () => voiceChannel.leave());
                     })
@@ -36,9 +35,10 @@ module.exports = {
                 
             }
             
+
         }
         else {
-            return message.reply("this user is not connected to a voice channel.");
+            return message.reply("this user is currently not connected to any voice channel.");
         }
 	},
 };
