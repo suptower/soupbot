@@ -40,7 +40,7 @@ module.exports = {
                 message.channel.send(name2+' has '+hp2+' health points to begin with.');
             }, 200);
             while(fight) {
-                attack();
+                attack(name1,name2,hp1,hp2,fight);
             }
         }
         else {
@@ -76,7 +76,7 @@ module.exports = {
             var value = dmgbase[a] + spreadVal;
             return value;
         }
-        function attack() {
+        function attack(name1,name2,hp1,hp2,fight) {
             rel = newR();
             var at = selectAttack(rel);
             var acc = hit(rel);
