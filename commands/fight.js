@@ -76,7 +76,7 @@ module.exports = {
             var value = dmgbase[a] + spreadVal;
             return value;
         }
-        async function attack() {
+        function attack() {
             rel = newR();
             var at = selectAttack(rel);
             var acc = hit(rel);
