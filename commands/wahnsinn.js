@@ -1,7 +1,8 @@
 const Discord = require('discord.js');
 module.exports = {
 	name: 'wahnsinn',
-	description: 'WAAAAAAAAAAAAHNSIIINN',
+    description: 'WAAAAAAAAAAAAHNSIIINN',
+    cooldown: 10,
 	execute(message, args) {
         console.log("wahnsinn command has been initiated.");
         const auRole = message.guild.roles.cache.find(role => role.name === "AUSOUP");
