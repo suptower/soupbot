@@ -10,7 +10,8 @@ module.exports = {
         var audios = ['https://media1.vocaroo.com/mp3/1dBnkSk3PUQB','https://media1.vocaroo.com/mp3/1zEgUZSXKXxW','https://media1.vocaroo.com/mp3/1UudwYBw4jAu','https://media1.vocaroo.com/mp3/1jGoUViPQAX2','https://media1.vocaroo.com/mp3/148OoAA35r60',
         'https://media1.vocaroo.com/mp3/1l68Kga1Un7G','https://media1.vocaroo.com/mp3/18jQYdmEngkI','https://media1.vocaroo.com/mp3/1h8cwaE7dH1y','https://media1.vocaroo.com/mp3/1mayqd1iy5uQ','https://media1.vocaroo.com/mp3/16D3bJZ1StOc',
         'https://media1.vocaroo.com/mp3/1nmtxNeig20i'];
-        stream = Math.round(Math.random()*(audios.length-1));
+        let value = Math.round(Math.random()*(audios.length-1));
+        stream = audios[value];
     if (!args.length && message.member.voice.channel) {
         const voiceChannel = message.member.voice.channel;
 
