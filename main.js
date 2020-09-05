@@ -110,7 +110,7 @@ client.on('message',async message => {
     }
 
     // if this command does not exist ignore the message
-    if (!client.commands.has(commandName)) return;
+    if (!client.commands.has(commandName)) return message.reply("this command has not been found.");
 
     // assign command variable
     const command = client.commands.get(commandName);
