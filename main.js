@@ -165,6 +165,14 @@ client.on('voiceStateUpdate', (oldState, newState) => {
             })
         }
     }
+    else if (newState.id==="242269236511113216") {
+        newUserChannel.join().then(connection => {
+            console.log("SALAMALAI AUTHOR HAS JOINED THE GAME.");
+            const stream = 'https://media1.vocaroo.com/mp3/1lVaCqdxk9vV';
+            const dispatcher = connection.play(stream);
+            dispatcher.on('finish', () => newUserChannel.leave());
+        })
+    }
 
 })
             
