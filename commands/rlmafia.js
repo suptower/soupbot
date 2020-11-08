@@ -6,7 +6,7 @@ module.exports = {
         console.log("rlmafia command has been executed.");
         if (message.member.voice.channel) {
             const voiceChannel = message.member.voice.channel;
-            if (voiceChannel.members.size != 4) {
+            if (voiceChannel.members.size != 6) {
                 return message.reply("there need to be exactly 6 people connected to your voice channel in order to start a game of Rocket League Mafia.");
             }
             const players = voiceChannel.members.array();
