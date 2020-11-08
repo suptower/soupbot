@@ -9,7 +9,7 @@ module.exports = {
             if (voiceChannel.members.size != 4) {
                 return message.reply("there need to be exactly 6 people connected to your voice channel in order to start a game of Rocket League Mafia.");
             }
-            const players = Array.from(voiceChannel.members);
+            const players = voiceChannel.members.array();
             const random = Math.round(Math.random()*players.length);
             const selected = players[random];
             players.splice(random,1);
