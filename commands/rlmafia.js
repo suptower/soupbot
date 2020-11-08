@@ -13,9 +13,9 @@ module.exports = {
             const random = Math.round(Math.random()*players.length);
             const selected = players[random];
             players.splice(random,1);
-            selected.user.send("You have been assigned the role \`Mafia\`");
-            for (let i=0; i < players.length-1; i++) {
-                players[i].user.send("You have been assigned the role \`Villager\`");
+            selected.user.send("**ROCKET LEAGUE MAFIA NOTIFICATION:** You have been assigned the role \`Mafia\`");
+            for (let i=0; i < players.length; i++) {
+                players[i].user.send("**ROCKET LEAGUE MAFIA NOTIFICATION:** You have been assigned the role \`Villager\`");
             }
         }
         else if (!message.member.voice.channel) {
