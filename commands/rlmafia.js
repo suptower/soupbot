@@ -10,7 +10,7 @@ module.exports = {
                 return message.reply("there need to be exactly 6 people connected to your voice channel in order to start a game of Rocket League Mafia.");
             }
             const players = voiceChannel.members.array();
-            const random = Math.round(Math.random()*players.length);
+            const random = Math.round(Math.random()*(players.length-1));
             const selected = players[random];
             players.splice(random,1);
             selected.user.send("**ROCKET LEAGUE MAFIA NOTIFICATION:** You have been assigned the role \`Mafia\`");
