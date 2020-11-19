@@ -8,7 +8,7 @@ module.exports = {
         const auRole = message.guild.roles.cache.find(role => role.name === "AUSOUP"); 
         console.log("mm command has been initiated.");
         const value = Math.round(Math.random()*4);
-        var audios = ['https://media1.vocaroo.com/mp3/1d2uJN1BHCMS','https://media1.vocaroo.com/mp3/1kKocCqcEZdV','https://media1.vocaroo.com/mp3/1nv4IckXsCTl','https://media1.vocaroo.com/mp3/1lwc7EQZYH4H','https://media1.vocaroo.com/mp3/1axh0IStlpQ6'];
+        var audios = ['./moinmeister/mm1.mp3','./moinmeister/mm2.mp3','./moinmeister/mm3.mp3','./moinmeister/mm4.mp3','./moinmeister/mm5.mp3'];
         stream = audios[value];
     if (!args.length && message.member.voice.channel) {
         const voiceChannel = message.member.voice.channel;

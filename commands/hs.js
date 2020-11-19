@@ -13,7 +13,7 @@ module.exports = {
                 const voiceChannel = message.member.voice.channel;
 
                 voiceChannel.join().then(connection => {
-                    const stream = 'https://media.vocaroo.com/mp3/jWCRHXWEsTT';
+                    const stream = './assets/hs.mp3';
                     const dispatcher = connection.play(stream);
                     dispatcher.on('finish',() => voiceChannel.leave());
             });
@@ -32,7 +32,7 @@ module.exports = {
                 }
                 const voiceChannel = message.mentions.members.first().voice.channel;
                 voiceChannel.join().then(connection => {
-                const stream = 'https://media.vocaroo.com/mp3/jWCRHXWEsTT';
+                const stream = './assets/hs.mp3';
                 const dispatcher = connection.play(stream);
                 dispatcher.on('finish',() => voiceChannel.leave());
                 })

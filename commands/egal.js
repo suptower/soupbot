@@ -9,7 +9,7 @@ module.exports = {
         if (!args.length && message.member.voice.channel) {
             const voiceChannel = message.member.voice.channel;
             voiceChannel.join().then(connection => {
-                const stream = 'https://media1.vocaroo.com/mp3/1eO7mmQMNVmN';
+                const stream = './assets/egal.mp3';
                 const dispatcher = connection.play(stream);
                 dispatcher.on('finish', () => voiceChannel.leave());
             })
@@ -28,7 +28,7 @@ module.exports = {
                 else {
                     const voiceChannel = message.mentions.members.first().voice.channel;
                     voiceChannel.join().then(connection => {
-                        const stream = 'https://media1.vocaroo.com/mp3/1eO7mmQMNVmN';
+                        const stream = './assets/egal.mp3';
                         const dispatcher = connection.play(stream);
                         dispatcher.on('finish', () => voiceChannel.leave());
                     })
