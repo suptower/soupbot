@@ -1,4 +1,5 @@
 const Discord = require('discord.js');
+const fs = require('fs');
 module.exports = {
 	name: 'apored',
     description: 'WIR SIND DA DIGGA JA DIGGA',
@@ -7,10 +8,9 @@ module.exports = {
         let stream = "";
         const auRole = message.guild.roles.cache.find(role => role.name === "AUSOUP"); 
         console.log("apored command has been initiated.");
-        var audios = ['https://media1.vocaroo.com/mp3/1eFMVKvdQFox,https://media1.vocaroo.com/mp3/1lU6ntQhRJMv','https://media1.vocaroo.com/mp3/1lU6ntQhRJMv','https://media1.vocaroo.com/mp3/1hsowxIhFqTY',
-        'https://media1.vocaroo.com/mp3/1oBYk0IlYotH','https://media1.vocaroo.com/mp3/1h1Q8kyC1Grd','https://media1.vocaroo.com/mp3/1e3YI7NSJNm2','https://media1.vocaroo.com/mp3/1lCvwhST5bgJ',
-        'https://media1.vocaroo.com/mp3/11MdyNpsZoou','https://media1.vocaroo.com/mp3/11rDYBEFsu4e','https://media1.vocaroo.com/mp3/15aewUfYg5My','https://media1.vocaroo.com/mp3/11MZ6EKPHcVe',
-        'https://media1.vocaroo.com/mp3/12m68wH2dlj2'];
+        var audios = ['./apored/babawagen.mp3','./apored/billo.mp3','./apored/brudermusslos.mp3','./apored/emblem.mp3','./apored/everydaysaturday1.mp3',
+        './apored/everydaysaturday2.mp3','./apored/lambogallardo.mp3','./apored/numerouno.mp3','./apored/photoshop.mp3','./apored/rangerovermansory.mp3',
+        './apored/submariner.mp3','./apored/yallahabibi.mp3'];
         let value = Math.round(Math.random()*(audios.length-1));
         stream = audios[value];
     if (!args.length && message.member.voice.channel) {

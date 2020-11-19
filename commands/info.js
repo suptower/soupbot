@@ -15,14 +15,9 @@ module.exports = {
                 { name: '\u200B', value: '\u200B' },
                 { name: 'Documentation', value: 'http://bit.ly/soupbotDoc' },
             )
-            .addFields(
-                { name: '\u200B', value: '\u200B' },
-                { name:'For further information',value: 'Add me on Discord: Arda K.#0554', inline:true},
-            )
-            .addField('\u200B','\u200B')
             .setTimestamp()
-            .setFooter('Updated: 12th of November, 2020');
+            .setFooter('Updated: 30th of August, 2020');
 
-            message.author.send(InfoEmbed);
+            message.channel.send(InfoEmbed);
 	},
 };
