@@ -159,7 +159,7 @@ client.on('voiceStateUpdate', (oldState, newState) => {
         if (newState.id==="357156269049643019") {
             newUserChannel.join().then(connection => {
                 console.log("Benny got rekt eZ in voice channel.");
-                const stream = 'https://media.vocaroo.com/mp3/jWCRHXWEsTT';
+                const stream = './assets/hs.mp3';
                 const dispatcher = connection.play(stream);
                 dispatcher.on('finish',() => newUserChannel.leave());
             })
@@ -167,7 +167,7 @@ client.on('voiceStateUpdate', (oldState, newState) => {
         else if (newState.id==="242269236511113216") {
             newUserChannel.join().then(connection => {
                 console.log("SALAMALAI AUTHOR HAS JOINED THE GAME.");
-                const stream = 'https://media1.vocaroo.com/mp3/1lVaCqdxk9vV';
+                const stream = './assets/salamalai.mp3';
                 const dispatcher = connection.play(stream);
                 dispatcher.on('finish', () => newUserChannel.leave());
             })
