@@ -7,8 +7,11 @@ module.exports = {
         let stream = "";
         const auRole = message.guild.roles.cache.find(role => role.name === "AUSOUP"); 
         console.log("apache command has been initiated.");
-        var audios = ['./apache/28liter.mp3','./apache/bläulich.mp3','./apache/fame.mp3','./apache/famous.mp3','./apache/matrix.mp3','./apache/nichtwiedu.mp3',
-        './apache/nieverstehen.mp3','./apache/nurnocheinenschluck.mp3','./apache/roller.mp3','./apache/sieruft.mp3','./apache/stimmen.mp3'];
+        var audios = ['./apache/2min.mp3','./apache/28liter.mp3','./apache/200kmh.mp3','./apache/2002.mp3','./apache/aufundab.mp3','./apache/beef.mp3','./apache/beifahrer.mp3',
+        './apache/bläulich.mp3','./apache/boot.mp3','./apache/brotnachhause.mp3','./apache/dochindernacht.mp3','./apache/durchdiestrassen.mp3','./apache/fame.mp3','./apache/famous.mp3',
+        './apache/ferrari.mp3','./apache/greygoose.mp3','./apache/indernacht.mp3','./apache/keinproblem.mp3','./apache/kleinehure.mp3','./apache/matrix.mp3','./apache/nichtwiedu.mp3',
+        './apache/nieverstehen.mp3','./apache/nono.mp3','./apache/nurnocheinenschluck.mp3','./apache/roller.mp3','./apache/sagmirwer.mp3','./apache/sexmitdir.mp3','./apache/sidechickz.mp3','./apache/sieruft.mp3',
+        './apache/stimmen.mp3','./apache/unterwegs.mp3','./apache/wieso.mp3'];
         let value = Math.round(Math.random()*(audios.length-1));
         stream = audios[value];
     if (!args.length && message.member.voice.channel) {
@@ -78,8 +81,10 @@ module.exports = {
         }
     }
     else if (args[0] === "info") {
-        message.channel.send("0 - 28 Liter\n1 - Bläulich\n2 - Fame\n3 - Famous\n4 - Matrix\n5 - Nicht wie du\n6 - Nie verstehen\n7 - Nur noch einen Schluck\n8 - Roller\n"
-        +"9 - Sie ruft\n10 - Stimmen");
+        message.channel.send("0 - 2 Minuten\n1 - 28 Liter\n2 - 200 km/h\n3 - 2002\n4 - Auf und ab\n5 - Beef\n6 - Beifahrersitz\n7 - Bläulich\n8 - Boot\n9 - Brot nach Hause"
+        + "\n10 - Doch in der Nacht\n11 - Durch die Straßen\n12 - Fame\n13 - Famous\n14 - Ferrari Testarossa\n15 - Grey Goose\n16 - Kein Problem\n17 - Kleine Hure\n18 - Matrix"
+        + "\n19 - Nicht wie du\n20 - Nie verstehen\n21 - No No\n22 - Nur noch einen Schluck\n23 - Roller\n24 - Sag mir wer\n25 - Sex mit dir\n26 - Sidechickz\n27 - Sie ruft\n28 - Stimmen"
+        + "\n29 - Unterwegs\n30 - Wieso tust du dir das an?");
     }
     else {
         message.reply(`this user is currently not connected to any voice channel.`);
