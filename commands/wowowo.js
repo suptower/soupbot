@@ -54,6 +54,7 @@ module.exports = {
                 message.reply('No connection available.');
             }
         }
+    }
     else if (message.mentions.users.size>=1 && message.mentions.members.first().voice.channel) {
         if (!auRole) {
             return message.reply("this server has not configured 'AUSOUP'.\nPlease create this role to configure permissions for alternative usage of commands.");
