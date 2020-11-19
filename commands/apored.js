@@ -20,7 +20,6 @@ module.exports = {
             const dispatcher = connection.play(stream);
             dispatcher.on('finish',() => voiceChannel.leave());
     });
-        
     }
     else if (!args.length) {
         return message.reply('you need to be connected to a voice channel to use this command.');
@@ -57,6 +56,9 @@ module.exports = {
             else {
                 message.reply('No connection available.');
             }
+        }
+        else {
+            return message.reply("your given number is not in accepted range.");
         }
     }
     else if (message.mentions.users.size>=1 && message.mentions.members.first().voice.channel) {
