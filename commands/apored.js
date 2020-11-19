@@ -25,24 +25,6 @@ module.exports = {
     else if (!args.length) {
         return message.reply('you need to be connected to a voice channel to use this command.');
     }
-    else if (message.mentions.users.size>=1 && message.mentions.members.first().voice.channel) {
-        if (!auRole) {
-            return message.reply("this server has not configured 'AUROLE'.\nPlease create this role to configure permissions for alternative usage of commands.");
-        }
-        else {
-            if (!message.member.roles.cache.has(auRole.id) && !message.member.permissions.has('ADMINISTRATOR')) {
-                return message.reply("you are not allowed to use this command.\nYou need to have 'AUSOUP' role assigned to execute.");
-            }
-            else {
-                const voiceChannel = message.mentions.members.first().voice.channel;
-                voiceChannel.join().then(connection => {
-                const dispatcher = connection.play(stream);
-                dispatcher.on('finish',() => voiceChannel.leave());
-                })
-            }
-            
-        }
-    }
     else if (!(isNaN(parseInt(args[0])))) {
         if (parseInt(args[0])>=0 && parseInt(args[0]) < audios.length) {
             stream = audios[parseInt(args[0])];
@@ -56,7 +38,7 @@ module.exports = {
             }
             else if (message.mentions.users.size>=1 && message.mentions.members.first().voice.channel) {
                 if (!auRole) {
-                    return message.reply("this server has not configured 'AUROLE'.\nPlease create this role to configure permissions for alternative usage of commands.");
+                    return message.reply("this server has not configured 'AUSOUP'.\nPlease create this role to configure permissions for alternative usage of commands.");
                 }
                 else {
                     if (!message.member.roles.cache.has(auRole.id) && !message.member.permissions.has('ADMINISTRATOR')) {
@@ -75,6 +57,24 @@ module.exports = {
             else {
                 message.reply('No connection available.');
             }
+        }
+    }
+    else if (message.mentions.users.size>=1 && message.mentions.members.first().voice.channel) {
+        if (!auRole) {
+            return message.reply("this server has not configured 'AUSOUP'.\nPlease create this role to configure permissions for alternative usage of commands.");
+        }
+        else {
+            if (!message.member.roles.cache.has(auRole.id) && !message.member.permissions.has('ADMINISTRATOR')) {
+                return message.reply("you are not allowed to use this command.\nYou need to have 'AUSOUP' role assigned to execute.");
+            }
+            else {
+                const voiceChannel = message.mentions.members.first().voice.channel;
+                voiceChannel.join().then(connection => {
+                const dispatcher = connection.play(stream);
+                dispatcher.on('finish',() => voiceChannel.leave());
+                })
+            }
+            
         }
     }
     else if (args[0] === "info") {
