@@ -45,7 +45,7 @@ module.exports = {
     }
     else if (!(isNaN(parseInt(args[0])))) {
         if (parseInt(args[0])>=0 && parseInt(args[0]) < audios.length) {
-            stream = audios(parseInt(args[0]));
+            stream = audios[parseInt(args[0])];
             if (!args[1] && message.member.voice.channel) {
                 const voiceChannel = message.member.voice.channel;
 
