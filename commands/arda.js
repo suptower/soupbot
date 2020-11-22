@@ -6,7 +6,8 @@ module.exports = {
         let stream = "";
         const auRole = message.guild.roles.cache.find(role => role.name === "AUSOUP"); 
         console.log("arda command has been initiated.");
-        var audios = ["./arda/cheats.mp3","./arda/confidentthrow.mp3","./arda/desgibtsnicht.mp3","./arda/duhuanson.mp3","./arda/dunuttensohn.mp3","./arda/packsnicht.mp3","./arda/warnieweg.mp3"];
+        var audios = ["./arda/cheats.mp3","./arda/confidentthrow.mp3","./arda/desgibtsnicht.mp3","./arda/duhuanson.mp3","./arda/dunuttensohn.mp3","./arda/packsnicht.mp3","./arda/warnieweg.mp3",
+                    "./arda/schwanz.mp3"];
         let value = Math.round(Math.random()*(audios.length-1));
         stream = audios[value];
     if (!args.length && message.member.voice.channel) {
@@ -76,7 +77,7 @@ module.exports = {
         }
     }
     else if (args[0] === "info") {
-        message.channel.send("0 - JAWOLL CHEATS\n1 - Condifent Throw\n2 - DES GIBTS NICHT\n3 - DU HUANSOHN\n4 - DU NUTTENSOHN\n5 - ICH PACKS NICHT\n6 - ICH WAR NIE WEG");
+        message.channel.send("0 - JAWOLL CHEATS\n1 - Condifent Throw\n2 - DES GIBTS NICHT\n3 - DU HUANSOHN\n4 - DU NUTTENSOHN\n5 - ICH PACKS NICHT\n6 - ICH WAR NIE WEG\n7 - Schwanz");
     }
     else {
         message.reply(`this user is currently not connected to any voice channel.`);
