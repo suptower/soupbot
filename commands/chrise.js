@@ -7,7 +7,7 @@ module.exports = {
         const auRole = message.guild.roles.cache.find(role => role.name === "AUSOUP"); 
         console.log("chrise command has been initiated.");
         var audios = ['./chrise/chrisesus.mp3','./chrise/dimitriruntervonmir.mp3','./chrise/eiercreme.mp3',
-            './chrise/ichweissnichtwas.mp3','./chrise/tuerkischeasy.mp3','./chrise/wtfmyfriend.mp3','./assets/mo5i.mp3','./chrise/mosesdukannstnix.mp3',
+            './chrise/ichweissnichtwas.mp3','./chrise/tuerkischeasy.mp3','./chrise/wtfmyfriend.mp3','./chrise/moosi.mp3','./chrise/mosesdukannstnix.mp3',
         './chrise/goenndoch.mp3','./chrise/schrei1.mp3','./chrise/eywas.mp3','./chrise/offense.mp3','./chrise/eztilt.mp3','./chrise/fullint.mp3','./chrise/andigehdochweg.mp3',
         './chrise/keineahnung.mp3','./chrise/schrei2.mp3','./chrise/schrei3.mp3','./chrise/schrei4.mp3','./chrise/schrei5.mp3'];
         let value = Math.round(Math.random()*(audios.length-1));
