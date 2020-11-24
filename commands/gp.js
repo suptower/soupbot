@@ -1,26 +1,20 @@
 const Discord = require('discord.js');
 module.exports = {
-    name: 'gp',
-    cooldown: 15,
-	description: 'Use the gp feature.',
+	name: 'gp',
+	description: 'GANXTA',
 	execute(message, args) {
         console.log("gp command has been initiated.");
         const auRole = message.guild.roles.cache.find(role => role.name === "AUSOUP");
-        if (!message.member.permissions.has('MOVE_MEMBER')) {
-            return message.reply("you are not allowed to use this command.\nYou need to be allowed to move members to execute this.");
-        }
-		if (!args.length && message.member.voice.channel) {
-                const voiceChannel = message.member.voice.channel;
-
-                voiceChannel.join().then(connection => {
-                    const stream = './assets/gp.mp3';
-                    const dispatcher = connection.play(stream);
-                    dispatcher.on('finish',() => voiceChannel.leave());
-            });
-            
+        if (!args.length && message.member.voice.channel) {
+            const voiceChannel = message.member.voice.channel;
+            voiceChannel.join().then(connection => {
+                const stream = './assets/gp.mp3';
+                const dispatcher = connection.play(stream);
+                dispatcher.on('finish', () => voiceChannel.leave());
+            })
         }
         else if (!args.length) {
-            message.reply('you need to be connected to a voice channel to use this command.');
+            return message.reply("you need to be connected to a voice channel.");
         }
         else if (message.mentions.users.size>=1 && message.mentions.members.first().voice.channel) {
             if (!auRole) {
@@ -30,18 +24,20 @@ module.exports = {
                 if (!message.member.roles.cache.has(auRole.id) && !message.member.permissions.has('ADMINISTRATOR')) {
                     return message.reply("you are not allowed to use this command.\nYou need to have 'AUSOUP' role assigned to execute.");
                 }
-                const voiceChannel = message.mentions.members.first().voice.channel;
-                voiceChannel.join().then(connection => {
-                const stream = './assets/gp.mp3';
-                const dispatcher = connection.play(stream);
-                dispatcher.on('finish',() => voiceChannel.leave());
-                })
+                else {
+                    const voiceChannel = message.mentions.members.first().voice.channel;
+                    voiceChannel.join().then(connection => {
+                        const stream = './assets/gp.mp3';
+                        const dispatcher = connection.play(stream);
+                        dispatcher.on('finish', () => voiceChannel.leave());
+                    })
+                }
+                
             }
-                             
             
-    }
-    else {
-        message.reply(`this user is currently not connected to any voice channel.`);
-    }
+        }
+        else {
+            return message.reply("this user is not connected to a voice channel.");
+        }
 	},
 };

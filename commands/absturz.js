@@ -3,7 +3,7 @@ module.exports = {
 	name: 'absturz',
 	description: 'absturz digga',
 	execute(message, args) {
-        console.log("vn command has been initiated.");
+        console.log("absturz command has been initiated.");
         const auRole = message.guild.roles.cache.find(role => role.name === "AUSOUP");
         if (!args.length && message.member.voice.channel) {
             const voiceChannel = message.member.voice.channel;
