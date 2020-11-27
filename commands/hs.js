@@ -1,6 +1,6 @@
 const Discord = require('discord.js');
 module.exports = {
-	name: 'absturz',
+	name: 'hs',
 	description: 'hs feature',
 	execute(message, args) {
         console.log("hs command has been initiated.");
