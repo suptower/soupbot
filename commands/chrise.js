@@ -79,9 +79,9 @@ module.exports = {
         }
     }
     else if (args[0] === "info") {
-        message.channel.send("0 - Chrise sus\n1 - Dimitri, runter von mir\n2 - Eiercreme\n3 - Ich weiss nicht\n4 - Turkish for Anfänger\n5 - wtf my friend?\n6 - YAAAAA MOSIIIII"
+        message.channel.send("```0 - Chrise sus\n1 - Dimitri, runter von mir\n2 - Eiercreme\n3 - Ich weiss nicht\n4 - Turkish for Anfänger\n5 - wtf my friend?\n6 - YAAAAA MOSIIIII"
         +"\n7 - MOSES DU KANNST NIX\n8 - GÖNN DOCH\n9 - Schrei 1\n10 - EY WAS IST DES DENN\n11 - Schlechtester Offense überhaupt\n12 - EZ TILT\n13 - Full int\n"
-        +"14 - Ganz Casual Tilt gegen Andi\n15 - Keine Ahnung\n16 - Schrei 2\n17 - Schrei 3\n18 - Schrei 4\n19 - Schrei 5");
+        +"14 - Ganz Casual Tilt gegen Andi\n15 - Keine Ahnung\n16 - Schrei 2\n17 - Schrei 3\n18 - Schrei 4\n19 - Schrei 5```");
     }
     else {
         message.reply(`this user is currently not connected to any voice channel.`);

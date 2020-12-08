@@ -77,8 +77,8 @@ module.exports = {
         }
     }
     else if (args[0] === "info") {
-        message.channel.send("0 - JAWOLL CHEATS\n1 - Condifent Throw\n2 - DES GIBTS NICHT\n3 - DU HUANSOHN\n4 - DU NUTTENSOHN\n5 - ICH PACKS NICHT\n6 - ICH WAR NIE WEG\n7 - Schwanz"
-        + "\n8 - AMERIKA SEINE MUTTER\n9 - JUNGE\n10 - NUR WEIL ICH CLIPPE\n11 - Ganz Casual Tilt gegen Chrise und Andi");
+        message.channel.send("```0 - JAWOLL CHEATS\n1 - Condifent Throw\n2 - DES GIBTS NICHT\n3 - DU HUANSOHN\n4 - DU NUTTENSOHN\n5 - ICH PACKS NICHT\n6 - ICH WAR NIE WEG\n7 - Schwanz"
+        + "\n8 - AMERIKA SEINE MUTTER\n9 - JUNGE\n10 - NUR WEIL ICH CLIPPE\n11 - Ganz Casual Tilt gegen Chrise und Andi```");
     }
     else {
         message.reply(`this user is currently not connected to any voice channel.`);

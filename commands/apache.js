@@ -81,10 +81,10 @@ module.exports = {
         }
     }
     else if (args[0] === "info") {
-        message.channel.send("0 - 2 Minuten\n1 - 28 Liter\n2 - 200 km/h\n3 - 2002\n4 - Auf und ab\n5 - Beef\n6 - Beifahrersitz\n7 - Bläulich\n8 - Boot\n9 - Brot nach Hause"
+        message.channel.send("```0 - 2 Minuten\n1 - 28 Liter\n2 - 200 km/h\n3 - 2002\n4 - Auf und ab\n5 - Beef\n6 - Beifahrersitz\n7 - Bläulich\n8 - Boot\n9 - Brot nach Hause"
         + "\n10 - Doch in der Nacht\n11 - Durch die Straßen\n12 - Fame\n13 - Famous\n14 - Ferrari Testarossa\n15 - Grey Goose\n16 - Kein Problem\n17 - Kleine Hure\n18 - Matrix"
         + "\n19 - Nicht wie du\n20 - Nie verstehen\n21 - No No\n22 - Nur noch einen Schluck\n23 - Roller\n24 - Sag mir wer\n25 - Sex mit dir\n26 - Sidechickz\n27 - Sie ruft\n28 - Stimmen"
-        + "\n29 - Unterwegs\n30 - Wieso tust du dir das an?\n31 - Keine Fragen");
+        + "\n29 - Unterwegs\n30 - Wieso tust du dir das an?\n31 - Keine Fragen```");
     }
     else {
         message.reply(`this user is currently not connected to any voice channel.`);

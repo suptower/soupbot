@@ -80,8 +80,8 @@ module.exports = {
         }
     }
     else if (args[0] === "info") {
-        message.channel.send("0 - Babawagen\n1 - Billo\n2 - Bruder muss los\n3 - Emblem\n4 - Everyday Saturday 1\n5 - Everyday Saturday 2\n6 - Lambo Gallardo\n7 - Numero Uno\n8 - Photoshop\n"
-        + "9 - Range Rover Mansory\n10 - Submariner\n11 - Yalla Habibi");
+        message.channel.send("```0 - Babawagen\n1 - Billo\n2 - Bruder muss los\n3 - Emblem\n4 - Everyday Saturday 1\n5 - Everyday Saturday 2\n6 - Lambo Gallardo\n7 - Numero Uno\n8 - Photoshop\n"
+        + "9 - Range Rover Mansory\n10 - Submariner\n11 - Yalla Habibi```");
     }
     else {
         message.reply(`this user is currently not connected to any voice channel.`);

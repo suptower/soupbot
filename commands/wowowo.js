@@ -74,7 +74,7 @@ module.exports = {
         }
     }
     else if (args[0] === "info") {
-        message.channel.send("0 - Chayas\n1 - Die Kilos\n2 - Die Scheine\n3 - Dein Para");
+        message.channel.send("```0 - Chayas\n1 - Die Kilos\n2 - Die Scheine\n3 - Dein Para```");
     }
     else {
         message.reply(`this user is currently not connected to any voice channel.`);
