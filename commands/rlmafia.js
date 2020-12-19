@@ -10,8 +10,7 @@ module.exports = {
                 return message.reply("there need to be exactly 6 people connected to your voice channel in order to start a game of Rocket League Mafia.");
             }
             const players = voiceChannel.members.array();
-            let teamblue = players;
-            let teamorange = players;
+            let teamblue, teamorange = voiceChannel.members.array();
             for (let i = 0; i < 6; i++) {
                 teamorange.shift();
             }
@@ -21,8 +20,8 @@ module.exports = {
                 teamblue.splice(ran,1);
             }
             
-            message.channel.send("```TEAM GENERATION\n**Blue Team**\n"+teamblue[0].displayName+"\n"+teamblue[1].displayName+"\n"+teamblue[2].displayName+"\n**Orange Team**"+
-            "\n"+teamorange[0].displayName+"\n"+teamorange[1].displayName+"\n"+teamorange[2].displayName+"```");
+            message.channel.send("```TEAM GENERATION\n**Blue Team**\n"+teamblue[0].user.username+"\n"+teamblue[1].user.username+"\n"+teamblue[2].user.username+"\n**Orange Team**"+
+            "\n"+teamorange[0].user.username+"\n"+teamorange[1].user.username+"\n"+teamorange[2].user.username+"```");
 
             const random = Math.round(Math.random()*(players.length-1));
             const selected = players[random];
