@@ -21,8 +21,8 @@ module.exports = {
                 teamblue.splice(ran,1);
             }
             
-            message.channel.send("```TEAM GENERATION\n**Blue Team**\n"+teamblue[0].nickname+"\n"+teamblue[1].nickname+"\n"+teamblue[2].nickname+"\n**Orange Team**"+
-            "\n"+teamorange[0].nickname+"\n"+teamorange[1].nickname+"\n"+teamorange[2].nickname+"```");
+            message.channel.send("```TEAM GENERATION\n**Blue Team**\n"+teamblue[0].displayName+"\n"+teamblue[1].displayName+"\n"+teamblue[2].displayName+"\n**Orange Team**"+
+            "\n"+teamorange[0].displayName+"\n"+teamorange[1].displayName+"\n"+teamorange[2].displayName+"```");
 
             const random = Math.round(Math.random()*(players.length-1));
             const selected = players[random];
