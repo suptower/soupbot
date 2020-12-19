@@ -15,7 +15,7 @@ module.exports = {
                 teamorange.shift();
             }
             for (let i = 0; i < 3; i++) {
-                let ran = Math.round(Math.random()*(players.length-1));
+                let ran = Math.round(Math.random()*(players.length-(i+1));
                 teamorange.push(teamblue[ran]);
                 teamblue.splice(ran,1);
             }
