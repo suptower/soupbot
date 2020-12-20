@@ -14,11 +14,12 @@ module.exports = {
             for (let i = 0; i < 6; i++) {
                 teamorange.shift();
             }
-            for (let i = 0; i < 3; i++) {
-                let ran = Math.round(Math.random()*(players.length-(i+1)));
+            while (teamblue.length > teamorange.length) {
+                let ran = Math.round(Math.random()*(teamblue.length-1));
                 teamorange.push(teamblue[ran]);
                 teamblue.splice(ran,1);
             }
+            
             
             message.channel.send("```TEAM GENERATION\n**Blue Team**\n"+teamblue[0].user.username+"\n"+teamblue[1].user.username+"\n"+teamblue[2].user.username+"\n**Orange Team**"+
             "\n"+teamorange[0].user.username+"\n"+teamorange[1].user.username+"\n"+teamorange[2].user.username+"```");
