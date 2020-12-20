@@ -22,7 +22,7 @@ module.exports = {
             }
             
             
-            message.channel.send("```------------------------------------\n\nROCKET LEAGUE MAFIA TEAM GENERATION\n\n------------ Blue Team ------------**\n\n"+teamblue[0].displayName+"\n"+teamblue[1].displayName+"\n"+teamblue[2].displayName+"\n\n------------ Orange Team ------------**"+
+            message.channel.send("```------------------------------------\n\nROCKET LEAGUE MAFIA TEAM GENERATION\n\n------------ Blue Team ------------\n\n"+teamblue[0].displayName+"\n"+teamblue[1].displayName+"\n"+teamblue[2].displayName+"\n\n------------ Orange Team ------------"+
             "\n\n"+teamorange[0].displayName+"\n"+teamorange[1].displayName+"\n"+teamorange[2].displayName+"\n\n------------------------------------```");
 
             const random = Math.round(Math.random()*(players.length-1));
