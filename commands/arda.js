@@ -7,7 +7,7 @@ module.exports = {
         const auRole = message.guild.roles.cache.find(role => role.name === "AUSOUP"); 
         console.log("arda command has been initiated.");
         var audios = ["./arda/cheats.mp3","./arda/confidentthrow.mp3","./arda/desgibtsnicht.mp3","./arda/duhuanson.mp3","./arda/dunuttensohn.mp3","./arda/packsnicht.mp3","./arda/warnieweg.mp3",
-                    "./arda/schwanz.mp3","./arda/amerika.mp3","./arda/junge.mp3","./arda/nurweilichclippe.mp3","./arda/wohin.mp3"];
+                    "./arda/schwanz.mp3","./arda/amerika.mp3","./arda/junge.mp3","./arda/nurweilichclippe.mp3","./arda/wohin.mp3",'./arda/klassischerkanacke.mp3'];
         let value = Math.round(Math.random()*(audios.length-1));
         stream = audios[value];
     if (!args.length && message.member.voice.channel) {
@@ -78,7 +78,7 @@ module.exports = {
     }
     else if (args[0] === "info") {
         message.channel.send("```0 - JAWOLL CHEATS\n1 - Condifent Throw\n2 - DES GIBTS NICHT\n3 - DU HUANSOHN\n4 - DU NUTTENSOHN\n5 - ICH PACKS NICHT\n6 - ICH WAR NIE WEG\n7 - Schwanz"
-        + "\n8 - AMERIKA SEINE MUTTER\n9 - JUNGE\n10 - NUR WEIL ICH CLIPPE\n11 - Ganz Casual Tilt gegen Chrise und Andi```");
+        + "\n8 - AMERIKA SEINE MUTTER\n9 - JUNGE\n10 - NUR WEIL ICH CLIPPE\n11 - Ganz Casual Tilt gegen Chrise und Andi\n12 - Klassischer Kanacke```");
     }
     else {
         message.reply(`this user is currently not connected to any voice channel.`);

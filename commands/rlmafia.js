@@ -29,8 +29,12 @@ module.exports = {
             const selected = players[random];
             players.splice(random,1);
             selected.user.send("**ROCKET LEAGUE MAFIA NOTIFICATION:** You have been assigned the role \`Mafia\`");
+            selected.user.send("```------------------------------------\n\nROCKET LEAGUE MAFIA TEAM GENERATION\n\n------------ Blue Team ------------\n\n"+teamblue[0].displayName+"\n"+teamblue[1].displayName+"\n"+teamblue[2].displayName+"\n\n------------ Orange Team ------------"+
+            "\n\n"+teamorange[0].displayName+"\n"+teamorange[1].displayName+"\n"+teamorange[2].displayName+"\n\n------------------------------------```");
             for (let i=0; i < players.length; i++) {
                 players[i].user.send("**ROCKET LEAGUE MAFIA NOTIFICATION:** You have been assigned the role \`Villager\`");
+                players[i].user.send("```------------------------------------\n\nROCKET LEAGUE MAFIA TEAM GENERATION\n\n------------ Blue Team ------------\n\n"+teamblue[0].displayName+"\n"+teamblue[1].displayName+"\n"+teamblue[2].displayName+"\n\n------------ Orange Team ------------"+
+                "\n\n"+teamorange[0].displayName+"\n"+teamorange[1].displayName+"\n"+teamorange[2].displayName+"\n\n------------------------------------```");
             }
         }
         else if (!message.member.voice.channel) {
