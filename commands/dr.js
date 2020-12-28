@@ -2,7 +2,7 @@ const Discord = require('discord.js');
 module.exports = {
 	name: 'dr',
     description: 'BILLIGE REIME VON DIR KEINE KUNST',
-    cooldown: 15,
+    cooldown: 5,
 	execute(message, args) {
         let stream = "";
         const auRole = message.guild.roles.cache.find(role => role.name === "AUSOUP"); 
