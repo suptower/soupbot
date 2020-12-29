@@ -15,6 +15,12 @@ module.exports = {
             for (let i = 0; i < 6; i++) {
                 teamorange.shift();
             }
+            for (let i = teamblue.length-1; i > 0; i--) {
+                let j = Math.floor(Math.random()*(i+1));
+                let temp = teamblue[i];
+                teamblue[i] = teamblue[j];
+                teamblue[j] = temp;
+            }
             while (teamblue.length > teamorange.length) {
                 let ran = Math.round(Math.random()*(teamblue.length-1));
                 teamorange.push(teamblue[ran]);
