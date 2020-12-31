@@ -1,6 +1,6 @@
 const Discord = require('discord.js');
 module.exports = {
-    name: 'derprofi',
+    name: 'wot',
     cooldown: 10,
 	description: 'I THOUGHT COLD WATER WAS SUPPOSED TO BOIL FASTER THAN HOT WATER',
 	execute(message, args) {
