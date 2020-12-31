@@ -5,8 +5,8 @@ module.exports = {
 	execute(message, args) {
         let stream = "";
         const auRole = message.guild.roles.cache.find(role => role.name === "AUSOUP"); 
-        console.log("andi command has been initiated.");
-        var audios = ['./keanu/dick.mp3','./keanu/fuckit.mp3','./keanu/gettingcock.mp3','./keanu/ucanbecum.mp3','./keanu/wellcum.mp3','./keanu/yduucum'];
+        console.log("keanu command has been initiated.");
+        var audios = ['./keanu/dick.mp3','./keanu/fuckit.mp3','./keanu/gettingcock.mp3','./keanu/ucanbecum.mp3','./keanu/wellcum.mp3','./keanu/yduucum.mp3'];
         let value = Math.round(Math.random()*(audios.length-1));
         stream = audios[value];
     if (!args.length && message.member.voice.channel) {
