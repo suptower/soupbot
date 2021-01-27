@@ -79,7 +79,7 @@ module.exports = {
     else if (args[0] === "info") {
         message.channel.send("```0 - Ich steh oben ohne vor der Crowd\n1 - Backstage treff ich deine Frau\n2 - Mit der Brille sieht sie aus als wär sie schlau\n3 - Zwei Jägi Shots und sie miaut\n4 - Du warst mal beteiligt an 'nem Raub\n5 - Hurensohn wer dir das glaubt\n6 - Wie ich sehe hast du grade einen Lauf"
         +"\n7 - Erste Woche dreitausend verkauft\n8 - Ich mach nen 5er jeden Tag und geb es aus\n9 - 100 Düsen sind gebunkert in der Couch\n10 - Mit dem Helikopter stehst du nicht im Stau\n11 - Durch das Dollar-Zählen werden Finger blau\n12 - Guck mal dieses gottverdammte Leben ist ein Traum\n13 - Freitag ist Klausur und du machst blau\n"
-        +"14 - Du nennst sie nach einer Woche frau\n15 - Dein Couseng dritten Grades saß im Bau\n16 - Du liest manchmal Goethe oder Faust\n17 - WOW```");
+        +"14 - Du nennst sie nach einer Woche Frau\n15 - Dein Couseng dritten Grades saß im Bau\n16 - Du liest manchmal Goethe oder Faust\n17 - WOW```");
     }
     else {
         message.reply(`this user is currently not connected to any voice channel.`);
