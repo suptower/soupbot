@@ -5,7 +5,7 @@ module.exports = {
 	execute(message, args) {
         console.log("dice command has been initiated.");
         message.channel.send("The dice is rolling!");
-        const nr = (Math.round(Math.random()*6));
+        const nr = (Math.round(Math.random()*5+1));
         setTimeout(function() {
             message.channel.send(`The dice is showing ${nr}.`)
           }, 2000);
