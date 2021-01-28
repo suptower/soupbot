@@ -9,7 +9,7 @@ module.exports = {
         console.log("markus command has been initiated.");
         var audios = ['./markus/aua.mp3','./markus/blitz.mp3','./markus/bummsen.mp3','./markus/dreirein.mp3','./markus/duhuanson.mp3','./markus/erkenntnis.mp3',
         './markus/ezstadtwerke.mp3','./markus/feuerwehrschlauch.mp3','./markus/gebummst.mp3','./markus/gefuehl.mp3','./markus/krisse.mp3','./markus/pengpeng.mp3',
-        './markus/restarten.mp3','./markus/schabernack.mp3','./markus/scheisselabert.mp3','./markus/schwitzen.mp3','./markus/tuerzu.mp3','./markus/duplo.mp3'];
+        './markus/restarten.mp3','./markus/schabernack.mp3','./markus/scheisselabert.mp3','./markus/schwitzen.mp3','./markus/tuerzu.mp3','./markus/duplo.mp3','./markus/polishkid.mp3'];
         let value = Math.round(Math.random()*(audios.length-1));
         stream = audios[value];
     if (!args.length && message.member.voice.channel) {
@@ -80,7 +80,8 @@ module.exports = {
     }
     else if (args[0] === "info") {
         message.channel.send("```0 - AUA\n1 - Blitz beim Scheissen\n2 - Er bummst mich\n3 - DREI REIN\n4 - DU HUANSON\n5 - Erkenntnis\n6 - EZ STADTWERKE\n7 - Feuerwehrschlauch"+
-        "\n8 - OMG GEBUMMST\n9 - Gefühl\n10 - KRISSE???\n11 - PENG PENG\n12 - Bitte restarten\n13 - GENUG SCHABERNACK\n14 - Ganz Casual Tilt gegen Krisse\n15 - Schwitzen\n16 - Tür zu amk\n17 - DUPLO```");
+        "\n8 - OMG GEBUMMST\n9 - Gefühl\n10 - KRISSE???\n11 - PENG PENG\n12 - Bitte restarten\n13 - GENUG SCHABERNACK\n14 - Ganz Casual Tilt gegen Krisse\n15 - Schwitzen" +
+        "\n16 - Tür zu amk\n17 - DUPLO\n18 - POLISH KID```");
     }
     else {
         message.reply(`this user is currently not connected to any voice channel.`);
