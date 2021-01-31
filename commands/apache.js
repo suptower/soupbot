@@ -81,7 +81,7 @@ module.exports = {
         }
     }
     else if (args[0] === "info") {
-        message.channel.send("```0 - 2 Minuten\n1 - 28 Liter\n2 - 200 km/h\n3 - Angst\n4 - 2002\n5 - Auf und ab\n6 - Beef\n7 - Beifahrersitz\n8 - Bläulich\n9 - Boot\n10 - Brot nach Hause"
+        message.channel.send("```0 - 2 Minuten\n1 - 28 Liter\n2 - 200 km/h\n3 - 2002\n4 - Angst\n5 - Auf und ab\n6 - Beef\n7 - Beifahrersitz\n8 - Bläulich\n9 - Boot\n10 - Brot nach Hause"
         + "\n11 - Doch in der Nacht\n12 - Durch die Straßen\n13 - Fame\n14 - Famous\n15 - Ferrari Testarossa\n16 - Grey Goose\n17 - Kein Problem\n18 - Kleine Hure\n19 - Matrix"
         + "\n20 - Nicht wie du\n21 - Nie verstehen\n22 - No No\n23 - Nur noch einen Schluck\n24 - Roller\n25 - Sag mir wer\n26 - Sex mit dir\n27 - Sidechickz\n28 - Sie ruft\n29 - Stimmen"
         + "\n30 - Unterwegs\n31 - Wieso tust du dir das an?\n32 - Keine Fragen```");
