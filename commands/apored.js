@@ -3,7 +3,7 @@ const fs = require('fs');
 module.exports = {
 	name: 'apored',
     description: 'WIR SIND DA DIGGA JA DIGGA',
-    cooldown: 15,
+    cooldown: 10,
 	execute(message, args) {
         let stream = "";
         const auRole = message.guild.roles.cache.find(role => role.name === "AUSOUP"); 

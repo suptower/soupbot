@@ -1,7 +1,7 @@
 const Discord = require('discord.js');
 module.exports = {
     name: 'cleanup',
-    cooldown: 15,
+    cooldown: 10,
 	description: 'Cleans a text channel',
 	execute(message, args) {
         console.log("cleanup command has been initiated.");

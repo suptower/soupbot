@@ -1,7 +1,7 @@
 const Discord = require('discord.js');
 module.exports = {
     name: 'sinne',
-    cooldown: 15,
+    cooldown: 10,
 	description: 'Makes use of the Sinne function.',
 	execute(message, args) {
         console.log("sinne command has been initiated.");

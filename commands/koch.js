@@ -1,15 +1,15 @@
 const Discord = require('discord.js');
 module.exports = {
-    name: 'egal',
+    name: 'koch',
     cooldown: 10,
-	description: 'EGAAAAAAAAL',
+	description: 'F DEINE MUTTER',
 	execute(message, args) {
-        console.log("egal command has been initiated.");
+        console.log("koch command has been initiated.");
         const auRole = message.guild.roles.cache.find(role => role.name === "AUSOUP");
         if (!args.length && message.member.voice.channel) {
             const voiceChannel = message.member.voice.channel;
             voiceChannel.join().then(connection => {
-                const stream = './assets/egal.mp3';
+                const stream = './assets/koch.mp3';
                 const dispatcher = connection.play(stream);
                 dispatcher.on('finish', () => voiceChannel.leave());
             })
@@ -19,7 +19,7 @@ module.exports = {
         }
         else if (message.mentions.users.size>=1 && message.mentions.members.first().voice.channel) {
             if (!auRole) {
-                return message.reply("this server has not configured 'AUROLE'.\nPlease create this role to configure permissions for alternative usage of commands.");
+                return message.reply("this server has not configured 'AUSOUP'.\nPlease create this role to configure permissions for alternative usage of commands.");
             }
             else {
                 if (!message.member.roles.cache.has(auRole.id) && !message.member.permissions.has('ADMINISTRATOR')) {
@@ -28,7 +28,7 @@ module.exports = {
                 else {
                     const voiceChannel = message.mentions.members.first().voice.channel;
                     voiceChannel.join().then(connection => {
-                        const stream = './assets/egal.mp3';
+                        const stream = './assets/koch.mp3';
                         const dispatcher = connection.play(stream);
                         dispatcher.on('finish', () => voiceChannel.leave());
                     })

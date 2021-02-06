@@ -1,7 +1,6 @@
 const Discord = require('discord.js');
 module.exports = {
     name: 'markus',
-    cooldown: 15,
 	description: 'Use the markus feature.',
 	execute(message, args) {
         let stream = "";

@@ -1,7 +1,7 @@
 const Discord = require('discord.js');
 module.exports = {
     name: 'mo5i',
-    cooldown: 15,
+    cooldown: 10,
 	description: 'MOOOSSIIII JAAAAAA',
 	execute(message, args) {
         console.log("mo5i command has been initiated.");

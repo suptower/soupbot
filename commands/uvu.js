@@ -1,7 +1,7 @@
 const Discord = require('discord.js');
 module.exports = {
     name: 'uvu',
-    cooldown: 15,
+    cooldown: 10,
 	description: 'UVUVUVUWUJAE',
 	execute(message, args) {
         console.log("uvu command has been initiated.");

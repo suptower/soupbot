@@ -1,7 +1,7 @@
 module.exports = {
 	name: 'tts',
     description: 'uses text-to-speech provided by voice rss api',
-    cooldown: 15,
+    cooldown: 10,
 	execute(message, args) {
         console.log("tts command has been initiated.");
         const auRole = message.guild.roles.cache.find(role => role.name === "AUSOUP");

@@ -1,7 +1,7 @@
 const Discord = require('discord.js');
 module.exports = {
     name: 'vn',
-    cooldown: 15,
+    cooldown: 10,
 	description: 'VALLAH NEIN',
 	execute(message, args) {
         console.log("vn command has been initiated.");
