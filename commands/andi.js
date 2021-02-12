@@ -8,7 +8,7 @@ module.exports = {
         console.log("andi command has been initiated.");
         var audios = ['./andi/100kmh.mp3','./andi/ambestengespielt.mp3','./andi/ardagoennen.mp3','./andi/aufstor.mp3','./andi/ballflach.mp3','./andi/chrise1.mp3',
         './andi/chrise2.mp3','./andi/chrise3.mp3','./andi/clipoder.mp3','./andi/kante.mp3','./andi/kola.mp3','./andi/mosinab.mp3','./andi/ohnein.mp3','./andi/scheisse.mp3',
-        './andi/tilt.mp3','./andi/vergraben.mp3'];
+        './andi/tilt.mp3','./andi/vergraben.mp3','./andi/samen.mp3'];
         let value = Math.round(Math.random()*(audios.length-1));
         stream = audios[value];
     if (!args.length && message.member.voice.channel) {
@@ -80,7 +80,7 @@ module.exports = {
     else if (args[0] === "info") {
         message.channel.send("```0 - Unterwegs mit 100 km/h\n1 - ICH HAB AM BESTEN GESPIELT\n2 - Einfach Arda gönnen\n3 - DER GEHT AUFS TOR\n4 - BALL FLACH HALTEN\n5 - Ganz Casual Tilt gegen Chrise 1"
         +"\n6 - Ganz Casual Tilt gegen Chrise 2\n7 - Ganz Casual Tilt gegen Chrise 3\n8 - Du clippst schon oder?\n9 - Kante geben\n10 - Wie viel Kola hat Zucker?\n11 - Ganz Casual Tilt gegen Mosi\n12 - OH NEIN\n"
-        +"13 - Scheisse\n14 - Ganz Casual Tilt\n15 - Ganz Casual Tilt gegen Arda```");
+        +"13 - Scheisse\n14 - Ganz Casual Tilt\n15 - Ganz Casual Tilt gegen Arda\n16 - Jedes Kraut hat Samen```");
     }
     else {
         message.reply(`this user is currently not connected to any voice channel.`);
