@@ -8,7 +8,7 @@ module.exports = {
         const auRole = message.guild.roles.cache.find(role => role.name === "AUSOUP"); 
         console.log("deutschrap command has been initiated.");
         var audios = ['./deutschrap/abwennesabgeht.mp3','./deutschrap/afghanischersimba.mp3',
-        './deutschrap/akkusativ.mp3','./deutschrap/akpella.mp3','./deutschrap/amazonprime','./deutschrap/anusprobleme.mp3','./deutschrap/aontraktor.mp3','./deutschrap/arschinslomo.mp3','./deutschrap/asterix.mp3',
+        './deutschrap/akkusativ.mp3','./deutschrap/akpella.mp3','./deutschrap/amazonprime.mp3','./deutschrap/anusprobleme.mp3','./deutschrap/aontraktor.mp3','./deutschrap/arschinslomo.mp3','./deutschrap/asterix.mp3',
         './deutschrap/auslaender.mp3','./deutschrap/ayranpferd.mp3','./deutschrap/babasaadfrisbee.mp3','./deutschrap/babyaufamazon.mp3','./deutschrap/backekacke.mp3','./deutschrap/bifimumu.mp3',
         './deutschrap/billigereime.mp3','./deutschrap/binisses.mp3','./deutschrap/blasenmann.mp3','./deutschrap/bogota.mp3','./deutschrap/boneztochter.mp3','./deutschrap/brruzi.mp3','./deutschrap/brudervertraunicht.mp3','./deutschrap/buntstiftverloren.mp3',
         './deutschrap/busfetischist.mp3','./deutschrap/bushidofrisbee.mp3','./deutschrap/capuccinokriminell.mp3','./deutschrap/chakuzamann.mp3','./deutschrap/chayaslesbisch.mp3','./deutschrap/coolwieeinkuehlschrank.mp3','./deutschrap/diewursthatzwei.mp3','./deutschrap/duhorstduhans.mp3',
