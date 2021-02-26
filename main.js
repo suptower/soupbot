@@ -172,6 +172,14 @@ client.on('voiceStateUpdate', (oldState, newState) => {
                 dispatcher.on('finish', () => newUserChannel.leave());
             })
         }
+        else if (newState.id==="495977960780595202") {
+            newUserChannel.join().then(connection => {
+                console.log("Der Zackige wurde 100 in 1.");
+                const stream = "./assets/devam.mp3";
+                const dispatccher = connection.play(stream);
+                dispatcher.on('finish', () => newUserChannel.leave());
+            })
+        }
     }
     
 
