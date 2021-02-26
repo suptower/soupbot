@@ -176,7 +176,7 @@ client.on('voiceStateUpdate', (oldState, newState) => {
             newUserChannel.join().then(connection => {
                 console.log("Der Zackige wurde 100 in 1.");
                 const stream = "./assets/devam.mp3";
-                const dispatccher = connection.play(stream);
+                const dispatcher = connection.play(stream);
                 dispatcher.on('finish', () => newUserChannel.leave());
             })
         }
