@@ -27,7 +27,7 @@ module.exports = {
         './deutschrap/textehinkacken.mp3','./deutschrap/thunfisch.mp3','./deutschrap/tretboot.mp3','./deutschrap/trivago.mp3','./deutschrap/valezka.mp3','./deutschrap/veyselfrisbee.mp3','./deutschrap/voegelpoebel.mp3','./deutschrap/waslabertkay.mp3','./deutschrap/weiberleiter.mp3',
         './deutschrap/weihnachtsmann.mp3','./deutschrap/wieduundich.mp3','./deutschrap/wozuphysik.mp3','./deutschrap/zdfneo.mp3','./deutschrap/zeckenbiss.mp3','./deutschrap/zehnmetermalvier.mp3','./deutschrap/zumiesereime.mp3','./deutschrap/anispenis.mp3','./deutschrap/arschlochaufhellen.mp3',
         './deutschrap/bangfaust.mp3','./deutschrap/flowking.mp3','./deutschrap/frankweint.mp3','./deutschrap/gayvorite.mp3','./deutschrap/kaltwiealaska.mp3','./deutschrap/maestro_asche.mp3','./deutschrap/schwulaussehend.mp3','./deutschrap/schwulios.mp3','./deutschrap/arschhaare1.mp3','./deutschrap/arschhaare2.mp3',
-        './deutschrap/barmitzwah.mp3',,'./deutschrap/behindert.mp3','./deutschrap/fiattwingo.mp3','./deutschrap/guenther.mp3',,'./deutschrap/promobeef.mp3','./deutschrap/schiefenasen.mp3','./deutschrap/strichcode.mp3','./deutschrap/weltohnebigmac.mp3'];
+        './deutschrap/barmitzwah.mp3','./deutschrap/behindert.mp3','./deutschrap/fiattwingo.mp3','./deutschrap/guenther.mp3','./deutschrap/promobeef.mp3','./deutschrap/schiefenasen.mp3','./deutschrap/strichcode.mp3','./deutschrap/weltohnebigmac.mp3'];
         let value = Math.round(Math.random()*(audios.length-1));
         stream = audios[value];
     if (!args.length && message.member.voice.channel) {
