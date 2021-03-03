@@ -26,7 +26,8 @@ module.exports = {
         './deutschrap/sexonbday.mp3','./deutschrap/shiteater.mp3','./deutschrap/skrrt.mp3','./deutschrap/snickersaufmmars.mp3','./deutschrap/sohartfroehlich.mp3','./deutschrap/somelungen.mp3','./deutschrap/stadtlandfluss.mp3','./deutschrap/tausendfieber.mp3','./deutschrap/teflonvorderbrust.mp3',
         './deutschrap/textehinkacken.mp3','./deutschrap/thunfisch.mp3','./deutschrap/tretboot.mp3','./deutschrap/trivago.mp3','./deutschrap/valezka.mp3','./deutschrap/veyselfrisbee.mp3','./deutschrap/voegelpoebel.mp3','./deutschrap/waslabertkay.mp3','./deutschrap/weiberleiter.mp3',
         './deutschrap/weihnachtsmann.mp3','./deutschrap/wieduundich.mp3','./deutschrap/wozuphysik.mp3','./deutschrap/zdfneo.mp3','./deutschrap/zeckenbiss.mp3','./deutschrap/zehnmetermalvier.mp3','./deutschrap/zumiesereime.mp3','./deutschrap/anispenis.mp3','./deutschrap/arschlochaufhellen.mp3',
-        './deutschrap/bangfaust.mp3','./deutschrap/flowking.mp3','./deutschrap/frankweint.mp3','./deutschrap/gayvorite.mp3','./deutschrap/kaltwiealaska.mp3','./deutschrap/maestro_asche.mp3','./deutschrap/schwulaussehend.mp3','./deutschrap/schwulios.mp3'];
+        './deutschrap/bangfaust.mp3','./deutschrap/flowking.mp3','./deutschrap/frankweint.mp3','./deutschrap/gayvorite.mp3','./deutschrap/kaltwiealaska.mp3','./deutschrap/maestro_asche.mp3','./deutschrap/schwulaussehend.mp3','./deutschrap/schwulios.mp3','./deutschrap/arschhaare1.mp3','./deutschrap/arschhaare2.mp3',
+        './deutschrap/barmitzwah.mp3',,'./deutschrap/behindert.mp3','./deutschrap/fiattwingo.mp3','./deutschrap/guenther.mp3',,'./deutschrap/promobeef.mp3','./deutschrap/schiefenasen.mp3','./deutschrap/strichcode.mp3','./deutschrap/weltohnebigmac.mp3'];
         let value = Math.round(Math.random()*(audios.length-1));
         stream = audios[value];
     if (!args.length && message.member.voice.channel) {
@@ -109,7 +110,8 @@ module.exports = {
         message.channel.send("```\n110 - Schlangen grasen\n111 - Schweinemedallion\n112 - Schwerkraft\n113 - Schwul und gay\n114 - Sechs Stellen vor dem Komma, Multimillionär\n115 - Cousinen wollen Sex am B-Day\n116 - Shit-Eater\n117 - Skrrt\n118 - Snickers aufm Mars\n119 - So hart fröhlich"
         + "\n120 - Some Lungen\n121 - Stadt Land Fluss\n122 - Krank wie tausend Fieber\n123 - Teflon vor der Brust\n124 - Texte hinkacken\n125 - Thunfisch Thunfisch\n126 - Tretboot\n127 - Trivago\n128 - Valezka, meine Freundin und Schwester\n129 - Veysel Frisbee"
         + "\n130 - Vögel vögel und vögel ihr Vögel\n131 - Was labert Kay da für 'ne Scheiße?\n132 - Weiber Leiter\n133 - Weihnachtsmann\n134 - Wie du und ich\n135 - Wozu brauchen wir Physik?\n136 - Hurensohn ZDF Neo\n137 - Zeckenbiss\n138 - Zehn meter mal vier\n139 - Zu miese Reime```");
-        message.channel.send("```140 - Anis Penis\n141 - Arschloch aufhellen\n142 - Geballte Faust\n143 - Flowmonster John Webber\n144 - Frank weint\n145 - Gayvorite\n146 - Kalt wie Alaska\n147 - Maestro vs. Asche\n148 - Schwul aussehend\n149 - Schwulios Caesar```");
+        message.channel.send("```140 - Anis Penis\n141 - Arschloch aufhellen\n142 - Geballte Faust\n143 - Flowmonster John Webber\n144 - Frank weint\n145 - Gayvorite\n146 - Kalt wie Alaska\n147 - Maestro vs. Asche\n148 - Schwul aussehend\n149 - Schwulios Caesar"
+        + "\n150 - Arschhaare 1\n151 - Arschhaare 2\n152 - Bar Mitzwah\n153 - Behindert\n154 - Fiat Twingo\n155 - Fick die wie Günther\n156 - Promobeef\n157 - Schiefe Nasen\n158 - Strichcode\n159 - Welt ohne Big Mac```");
     }
     else {
         message.reply(`this user is currently not connected to any voice channel.`);
